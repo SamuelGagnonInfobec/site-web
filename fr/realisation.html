@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Innovexia</title>
+    <meta name="description" content="">
+
+    <meta property="og:title" content="Innovexia">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="https://www.innovexia.ca">
+    <meta property="og:image" content="https://www.innovexia.ca">
+
+    <meta property="og:site_name" content="Innovexia">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <link href="../favicon.ico" type="image/x-icon" rel="icon">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../js/appearonscroll/aos.css">
+
+    <meta name="theme-color" content="#250E62">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+
+</head>
+
+<body>
+    <div id="loadingLoader"></div>
+    <a id="top"></a>
+    <header>
+        <div class="logo"><a href="../index.html"><img src="../img/innovexia.svg" width="180" alt="Innovexia"
+                    title="Innovexia"></a></div>
+
+        <nav class="lang"><a href="#">en</a></nav>
+        <div id="navMenuLoader"></div>
+        <div class="clear"></div>
+    </header>
+
+    <div class="head">
+        <div class="centerContentY padLarge left">
+            <h1 class="textStroke">Réalisations</h1>
+        </div><!-- centerContentAll -->
+
+
+        <div class="social">
+            <div data-aos="fade-up" id="socialTopLoader">
+            </div>
+        </div><!-- social -->
+    </div><!-- fin head home -->
+
+
+    <div class="content" data-aos="fade-up">
+        <div class="noMarg no_6 bckJaune translateHead padLarge">
+            <p>Portfolio de quelques unes de nos réalisations.</p>
+        </div><!-- noMarg -->
+
+        <div class="noMarg no_6 padLarge">
+        </div><!-- noMarg -->
+
+    </div><!-- content -->
+
+
+    <div class="content padLarge">
+        <div class="row">
+            <div class="col_3 no_3 card">
+                <img src="../img/realisation/cardio-virtuel.jpg" class="realisationPicture" alt="cardio-virtuel">
+                <div>
+                    <h6>Cardio Virtuel</h6>
+                    <p>A small description</p>
+                </div>
+            </div>
+            <div class="col_3 no_3 card">
+                <img src="../img/realisation/logo-kruger.gif" alt="Nom du projet" class="realisationPicture">
+                <div>
+                    <h6>Kruger</h6>
+                    <p>A small description</p>
+                </div>
+            </div>
+            <div class="col_3 no_3 card">
+                <img src="../img/realisation/Harmonia.jpg" alt="Nom du projet" class="realisationPicture">
+                <div>
+                    <h6>Harmonia</h6>
+                    <p>A small description</p>
+                </div>
+            </div>
+            <div class="col_3 no_3 card">
+                <img src="../img/realisation/cimetiere-saint-charles.png" alt="Nom du projet" class="realisationPicture">
+                <div>
+                    <h6>Cimetière Saint-Charles</h6>
+                    <p>A small description</p>
+                </div>
+            </div>
+        </div>
+    </div><!-- content -->
+
+
+    <div data-aos="fade-up" id="objectifLoader"></div><!-- fade-up -->
+
+    <a href="#0" class="upPage"></a><!-- HAUT DE PAGE -->
+
+    <div id="footerLoader"></div>
+
+    <script src="../../../ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../../../ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+    <script src="../js/dom-rdy.js"></script>
+
+    <script src="../js/appearonscroll/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: '-120,'
+        });
+        $(document).ready(function () {
+            $("#footerLoader").load("./component/footer.html")
+            $("#objectifLoader").load("./component/objectif.html")
+            $("#loadingLoader").load("./component/loading.html", null, () => {
+                setTimeout(function () {
+                    console.log("fadeout")
+                    $(".loading").fadeOut("slow");
+                }, 100);
+            })
+            $("#navMenuLoader").load("./component/navMenu.html");
+            $("#socialTopLoader").load("./component/social.html");
+        });
+    </script>
+
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="../../../css2.css?family=Raleway:wght@500;900&family=Sen:wght@400;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>

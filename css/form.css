@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+
+/* INPUT LABEL */
+
+label,
+input,
+select,
+button,
+textarea {
+    display: block;
+    font-family: 'Sen', sans-serif;
+}
+
+input,
+select,
+textarea {
+    border: none;
+    background: transparent;
+    padding: 15px 0px;
+    border-bottom: 2px solid #250E62;
+    width: 100%;
+}
+
+label {
+    margin: 0;
+    font-weight: 800;
+    color: #250E62
+}
+
+input {
+    margin: 15px 0 3px 0
+}
+
+input:focus {
+    outline: 0
+}
+
+textarea {
+    border: 1px solid #DFDFEF;
+    padding: 10px;
+    width: 100%;
+    margin: 25px 0;
+    min-height: 100px
+}
+
+button {
+    background: #250E62;
+    padding: 20px 35px;
+    border: none;
+    color: #fff;
+    font-weight: 800;
+}
+
+
+@media only screen and (max-width: 768px) {}
+
+
+@media only screen and (max-width: 480px) {}
